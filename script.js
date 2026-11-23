@@ -1,3 +1,4 @@
+const musica = document.getElementById('musica');
 const openBtn = document.getElementById('openBtn');
 const intro = document.getElementById('inicio');
 const content = document.getElementById('conteudo');
@@ -10,6 +11,7 @@ openBtn.addEventListener('click', () => {
   backTop.classList.remove('hidden');
   window.scrollTo({ top: 0, behavior: 'smooth' });
   createHeartBurst();
+  musica.play();
 });
 
 function createHeart() {
